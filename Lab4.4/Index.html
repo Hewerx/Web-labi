@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <script>
+
+let arr = [];
+
+for (let i = 0; i < 14; i++) {
+
+  arr.push(Math.cos(i));
+
+}
+
+arr.sort((a, b) => b - a);
+
+alert(arr);
+
+
+const date = new Date();
+const options = { month: 'long', day: 'numeric', hour: 'numeric' };
+const formattedDate = date.toLocaleString('en-US', options);
+alert(`Сегодняшнее число: ${formattedDate}`);
+
+const milliseconds = Date.parse(date);
+alert(`Миллисекунд с 1 января 1970: ${milliseconds}`);
+
+const seconds = date.getTime() / 1000;
+alert(`Секунд с 1 января 1970: ${seconds}`);
+
+const birthday = new Date('2001-07-20');
+alert(`День рождения: ${birthday.toLocaleDateString()}`);
+
+function trapezArea(a, b, h) {
+  return (a + b) * h / 2;
+}
+
+const a = 5;
+const b = 7;
+const h = 3;
+
+const area = trapezArea(a, b, h);
+
+alert(area)
+
+</script>
+
+</body>
+
+</html>

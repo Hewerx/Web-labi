@@ -1,0 +1,13 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+img {
+    transition: transform 0.5s ease;
+   }
+img:hover {
+    transform: scale(1.4);
+}

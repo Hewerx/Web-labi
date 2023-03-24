@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script type="text/javascript">
+        let abc = 'abcdefghijklmnopqrstuvwxyz'
+alert(abc[1] + '-2 '+abc[2] + '-2 '+abc[3] + '-2 '+abc[3] + '-2 '+abc[5] + '-2 '+abc[6] + '-2 '+abc[14] + '-2 ')
+let num ='020304060715'
+
+let str1 = num.slice(0,3)
+let str2 = num.slice(3,6)
+let str3 = num.slice(6,9)
+let str4 = num.slice(9,12)
+
+let num1 = Number(str1)
+let num2 = Number(str2)
+let num3 = Number(str3)
+let num4 = Number(str4)
+
+let first = (num1 * num2) - Math.pow(num3,2)
+let second = (2*num4)/(num1+(num2/4))
+alert(first)
+alert(second)
+
+document.getElementById("demo").innerHTML = abc
+
+let answer = confirm("Вы хотите вычислить значение?");
+let result = 0
+
+function calculate(choice){
+if (choice === 'y') {
+    result = (num1 * num2) - Math.pow(num3,2);
+} else {
+    result = (2*num4)/(num1+(num2/4));
+}
+document.writeln("Результат: " + result);
+}
+
+if (answer) {
+  calculate('y');
+} else {
+  calculate('f');
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    //1
+    let R = ['1fda', '21esf', 5];
+
+R.unshift(1, 2, 3); 
+R.push("fdsmk", "fsfds"); 
+
+alert(R)
+
+//2
+
+let arr = [];
+
+
+for (let i = 0; i < 5; i++) {
+  arr[i] = [];
+  for (let j = 0; j < 8; j++) {
+    arr[i][j] = Math.floor(Math.random() * 100);
+  }
+}
+
+for (let i = 0; i < 5; i += 2) {
+  arr[i].sort((a, b) => a - b);
+}
+
+alert(arr)
+
+//3
+let array = [
+[1, 'aaa', 2, 'afffff', 3],
+  ['fadff', 4, 5, 'faffff', 6],
+  [7, 'ddddddd', 8, 9, 'aaaaaaaaaa'],
+  ['gggggg', 10, 11, 'pppp', 12],
+  [13, 'text', 14, 'txt', 15],
+  ['txt2', 16, 17, 'af', 18]
+];
+
+// число в строку
+for (let i = 0; i < array.length; i++) {
+  for (let j = 0; j < array[i].length; j++) {
+    if (typeof array[i][j] === "number") {
+      array[i][j] = array[i][j].toString();
+    }
+  }
+}
+
+// реверс (на обратный)
+
+array.reverse();
+
+alert(array)
+//4
+
+let mass = []
+
+for (let i = 0; i < 7; i++) {
+ mass[i] = [];
+  for (let j = 0; j < 6; j++) 
+  {
+    mass[i][j] = `(${i},${j})`;
+  }
+}
+
+mass.unshift(['dafal', 'daf;da,l', 'ldalda', ';sa;a;', 'ladklsa', 'laalca']);
+mass.unshift(['fds', 'afa', 'fff', 'aaa', 'a', 'laaal']);
+mass.unshift(['ffffff', 'ass', 'vvvvv', 'sd', 'b', 'asllas']);
+mass.unshift(['vvvv', 'aasac', 'llll', 'dsv', 'ad', 'kas;ldl']);
+
+mass.pop();
+mass.pop();
+mass.pop();
+
+alert(mass)
+</script>
+
+</body>
+</html>

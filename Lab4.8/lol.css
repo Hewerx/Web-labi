@@ -1,0 +1,44 @@
+.hover-effect {
+    font-size: 16pt;
+    color: black;
+    background-color: white;
+  }
+  
+  .hover-effect:hover {
+    font-size: 64pt;
+    color: blue;
+  }
+
+
+
+  .image-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 200px;
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .caption h2 {
+    font-size: 24pt;
+    margin: 0;
+  }
+  
+  .caption p {
+    font-size: 16pt;
+    margin: 0;
+    color: red;
+  }
+  
+  .image-container:hover .caption {
+    color: blue;
+  }

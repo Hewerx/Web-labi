@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id = "line"></div>
+    <p id="demo"></p>
+
+    <h1>Анкета</h1>
+    <form>
+     <p><strong>Выберите курс:</strong></p>
+     <p><input type="radio" name="course" value="first" checked> Первый курс (100 руб.)</p>
+     <p><input type="radio" name="course" value="second"> Второй курс (150 руб.)</p>
+     <p><input type="radio" name="course" value="third"> Третий курс (200 руб.)</p>
+   
+     <p><strong>Выберите язык общения с преподавателем:</strong></p>
+     <select name="lang">
+      <option value="ru">Русский</option>
+      <option value="en">Английский</option>
+      <option value="ge">Немецкий</option>
+     </select>
+   
+     <p><strong>Выберите форму образования:</strong></p>
+     <p><input type="radio" name="education" value="full-time" checked> Очная форма обучения</p>
+     <p><input type="radio" name="education" value="part-time"> Заочная форма обучения (75% стоимости)</p>
+     <p><input type="radio" name="education" value="distance"> Дистанционная форма обучения (50% стоимости)</p>
+   
+     <button type="button" onclick="calculatePrice()">Рассчитать стоимость</button>
+    </form>
+   
+    <div id="result"></div>
+
+    <script src="1.js"></script>
+</body>
+</html>
